@@ -1,0 +1,211 @@
+<div class="container-fluid">
+  <h1 class="display-6 text-center mt-5 mb-3">¿Desde dónde está enviando?</h1>
+  <form>
+    <!-- Datos -->
+
+    <div class="row">
+      <div class="col-6">
+        <label for="formGroupExampleInput">Nombre completo</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" />
+      </div>
+      <div class="col">
+        <label for="exampleInputTelefone">Número de telefono</label>
+        <input type="number" class="form-control" id="exampleInputTelefone" />
+      </div>
+      <div class="col">
+        <label for="exampleInputEmail1">Correo electrónico</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <!-- /Datos -->
+    </div>
+    <div class="row">
+      <!-- Departamento -->
+      <div class="form-group col mt-3">
+        <label for="exampleDepartment">Seleccione el departamento origen</label>
+        <select class="form-control" id="exampleDepartment">
+          <option>Departamento1</option>
+          <option>Departamento2</option>
+          <option>Departamento3</option>
+        </select>
+      </div>
+      <!-- /Departamento -->
+      <!-- Municipio -->
+      <div class="form-group col mt-3">
+        <label for="exampleFormControlSelect1"
+          >Seleccione el municipio origen</label
+        >
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Municipio1</option>
+          <option>Municipio2</option>
+          <option>Municipio3</option>
+        </select>
+      </div>
+      <!-- /Municipio -->
+    </div>
+    <!-- Detalles -->
+    <div class="form-group mt-3">
+      <label for="exampleFormControlTextarea1"
+        >Referencias de dirección origen</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+    </div>
+    <!-- /Detalles -->
+  </form>
+
+  <!-- //////////// -->
+
+  <h1 class="display-6 text-center mt-5 mb-3">
+    ¿Hacia dónde se dirige este envío?
+  </h1>
+  <!-- Datos -->
+  <form>
+    <div class="row">
+      <div class="col">
+        <label for="formGroupExampleName">Nombre completo</label>
+        <input type="text" class="form-control" id="formGroupExampleName" />
+      </div>
+      <div class="col">
+        <label for="formGroupExampleTel">Número de telefono</label>
+        <input type="tel" class="form-control" id="formGroupExampleTel" />
+      </div>
+    </div>
+  </form>
+  <!-- /Datos -->
+  <form>
+    <div class="row">
+      <!-- Departamento -->
+      <div class="col form-group mt-3">
+        <label for="exampleFormDep">Seleccione el departamento destino</label>
+        <select class="form-control" id="exampleFormDep">
+          <option>Departamento1</option>
+          <option>Departamento2</option>
+          <option>Departamento3</option>
+        </select>
+      </div>
+      <!-- /Departamento -->
+      <!-- Municipio -->
+      <div class="col form-group mt-3">
+        <label for="exampleFormControlMuni"
+          >Seleccione el municipio destino</label
+        >
+        <select class="form-control" id="exampleFormControlMuni">
+          <option>Municipio1</option>
+          <option>Municipio2</option>
+          <option>Municipio3</option>
+        </select>
+      </div>
+      <!-- /Municipio -->
+    </div>
+    <!-- Detalles -->
+    <div class="form-group mt-3">
+      <label for="exampleFormTextarea">Referencias de dirección destino</label>
+      <textarea
+        class="form-control"
+        id="exampleFormTextarea"
+        rows="3"
+      ></textarea>
+    </div>
+    <!-- /Detalles -->
+  </form>
+
+  <!-- ////////// -->
+  <h1 class="display-6 text-center mt-5 mb-3">¿Que envia?</h1>
+  <!-- Datos -->
+  <form>
+    <div class="row">
+      <!-- Departamento -->
+      <div class="form-group col">
+        <label for="exampleTipo">Tipo</label>
+        <select class="form-control" id="exampleTipo">
+          <option>Paquetes</option>
+          <option>Sobres</option>
+        </select>
+      </div>
+      <!-- /Departamento -->
+      <div class="form-group col">
+        <label for="formGroupPeso">Peso en lbs.</label>
+        <input type="number" class="form-control" id="formGroupPeso" />
+      </div>
+      <div class="form-group col">
+        <label for="formGroupCantidad">Cantidad</label>
+        <input type="number" class="form-control" id="formGroupCantidad" />
+      </div>
+    </div>
+  </form>
+  <!-- /Datos -->
+  <form>
+    <!-- Detalles -->
+    <div class="form-group mt-3">
+      <label for="exampleTxtA">Detalles y observaciones del paquete</label>
+      <textarea class="form-control" id="exampleTxtA" rows="3"></textarea>
+    </div>
+    <!-- /Detalles -->
+  </form>
+
+  <div class="form-group row mt-4">
+    <div class="col-sm-10">
+      <button routerLink="/home" type="submit" class="btn btn-secondary mb-2">
+        Volver
+      </button>
+      <button type="submit" class="btn btn-primary ms-3 mb-2">Cotizar</button>
+    </div>
+  </div>
+</div>
+
+<!--  -->
+<div class="container row mx-auto">
+  <div class="card offset-4 col-4">
+    <div class="row d-flex justify-content-between px-3 top">
+      <div class="d-flex">
+        <h4 class="mb-3">
+          <span class="text-primary fw-bold">Detalles de envio</span>
+        </h4>
+      </div>
+      <div class="d-flex flex-column text-sm-right">
+        <!-- Origen -->
+        <p class="my-0">
+          <span class="fw-bold">Remitente: </span>Juan Roanlado Tista
+        </p>
+        <p class="my-0">
+          <span class="fw-bold">Departamento: </span>Departamento1
+        </p>
+        <p class="my-0"><span class="fw-bold">Municipio: </span>Municipio1</p>
+        <!-- /Origen -->
+        <hr />
+        <!-- Destino -->
+        <p class="my-0">
+          <span class="fw-bold">Destinatario: </span>Rodwell Cortez
+        </p>
+        <p class="my-0">
+          <span class="fw-bold">Departamento: </span>Departamento2
+        </p>
+        <p class="my-0"><span class="fw-bold">Municipio: </span>Municipio2</p>
+        <!-- /Destino -->
+        <hr />
+        <!-- Paquete -->
+        <p class="my-0"><span class="fw-bold">Tipo: </span>Paquete</p>
+        <p class="my-0"><span class="fw-bold">Peso: </span>5lbs</p>
+        <p class="my-0"><span class="fw-bold">Cantidad: </span>2</p>
+        <!-- /Paquete -->
+        <hr />
+      </div>
+      <h5 class="text-center">
+        Total:
+        <span class="text-success fw-bold">Q100</span>
+      </h5>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3 mb-3">
+      Pagar y enviar
+    </button>
+  </div>
+</div>

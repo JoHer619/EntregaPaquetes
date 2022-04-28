@@ -1,0 +1,71 @@
+<!-- Imports -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
+
+<!-- Navvbar -->
+<header class="hero">
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-custom">
+    <div class="container-fluid">
+      <i class="icono fa-solid fa-truck-fast fa-2x"></i>
+      <a class="navbar-brand" href="#">Salamá Express</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portal</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input
+            class="form-control me-3"
+            type="search"
+            placeholder="Número de guía"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success me-2" type="submit">
+            Rastrear
+          </button>
+          <button
+            routerLink="/login"
+            class="btn btn-outline-danger"
+            type="submit"
+          >
+            Salir
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,34 @@
+#place-time {
+  /* background-color: #343a40; */
+  background-color: #1c3643;
+  color: #fff;
+}
+
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.centrado{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.centrado--btn{
+  font-size: 1.3rem;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.overlay {
+  filter: opacity(50%);
+}
